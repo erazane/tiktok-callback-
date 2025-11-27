@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h2>Authorization Code</h2>
+    <div id="code">Getting code...</div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      document.getElementById("code").innerHTML = code
+        ? code
+        : "No code found.";
+      console.log("CODE:", code);
+    </script>
+  </body>
+</html>
